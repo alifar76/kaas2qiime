@@ -24,6 +24,7 @@ The main input files for this script are output files generated via the KEGG Aut
 For example, if KAAS was used to annotate 2 genomes called "GenomeA" and "GenomeB", the KAAS output files for these must be named as following:
 
 1) **GenomeA_kaas.txt**
+
 2) **GenomeA_kaas.txt**
 
 In addition to KAAS output files, a [QIIME parameter file](http://qiime.org/documentation/qiime_parameters_files.html) is also required, which is provided in the src directory. It's called ```qiime_params.txt```. Another file needed to specifically annotate the KAAS output is a KEGG database flat file that can be downloaded from the following link:
