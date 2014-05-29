@@ -1,4 +1,3 @@
-# https://raw.githubusercontent.com/ivan-kryukov/Kegg-Htext-Parser/master/ko00001.keg
 import os, sys, subprocess, re
 from datetime import datetime
 
