@@ -3,7 +3,7 @@
 Background
 ------
 
-This is a simple script to generate QIIME-based taxa plots using the output of [KAAS - KEGG Automatic Annotation Server](http://www.genome.jp/kegg/kaas/). 
+This is a simple script to generate QIIME-based taxa plots using the output of KAAS - KEGG Automatic Annotation Server. 
 
 Required Packages
 ------
@@ -19,7 +19,7 @@ The script has been tested on Ubuntu 12.04.3 LTS.
 Input files
 ------
 
-The main input files for this script are output files generated via the KEGG Automatic Annotation Server. Multiple KAAS output files can be provided. To ensure uniformity, all KAAS output files require a standard naming convention for this script. All files must be named by their sample ID followed by a ```_kaas.txt``` extension.
+The main input files for this script are output files generated via the [KEGG Automatic Annotation Server](http://www.genome.jp/kegg/kaas/). Multiple KAAS output files can be provided. To ensure uniformity, all KAAS output files require a standard naming convention for this script. All files must be named by their sample ID followed by a ```_kaas.txt``` extension.
 
 For example, if KAAS was used to annotate 2 genomes called "GenomeA" and "GenomeB", the KAAS output files for these must be named as following:
 
