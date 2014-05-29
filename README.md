@@ -23,4 +23,8 @@ There is a single script in the src folder. It's called:
 
 - ```annotate_kos.py```
 
-In addition to this, a [QIIME parameter file](http://qiime.org/documentation/qiime_parameters_files.html) is also required, which provided in the src directory. It's called ```qiime_params.txt```.
+In addition to this, a [QIIME parameter file](http://qiime.org/documentation/qiime_parameters_files.html) is also required, which provided in the src directory. It's called ```qiime_params.txt```. Another file needed to specifically annotate the KAAS output is a KEGG database flat file that can be downloaded from the following link:
+
+https://raw.githubusercontent.com/ivan-kryukov/Kegg-Htext-Parser/master/ko00001.keg
+
+Please save this file in same folder as ```annotate_kos.py``` and name this KEGG database file as **ko00001.keg**.
