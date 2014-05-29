@@ -23,7 +23,7 @@ In addition to this, a [QIIME parameter file](http://qiime.org/documentation/qii
 
 https://raw.githubusercontent.com/ivan-kryukov/Kegg-Htext-Parser/master/ko00001.keg
 
-Please save this file in same folder as ```annotate_kos.py``` and name this KEGG database file as **ko00001.keg**. Please note that without the ko00001.keg file, the script will not crash.
+Please save this file in same folder as ```annotate_kos.py``` and name this KEGG database file as **ko00001.keg**. Please note that without the ko00001.keg file, the script will crash.
 
 How to use
 ------
