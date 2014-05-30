@@ -53,7 +53,7 @@ def kass_combined_matrix(combinedfile,matrixout):
 	return outfile
 
 
-def keggParse(filename,comparefile,keggdbfile):
+def kegg_parse(filename,comparefile,keggdbfile):
 	""" Function to parse KEGG database flatfile"""
 	ko = []
 	infile = open(comparefile, 'rU')		
@@ -89,7 +89,7 @@ def keggParse(filename,comparefile,keggdbfile):
 	return outfile		
 			
 
-def metaData(filename,parsefile,kaasmatrix):
+def meta_data_add(filename,parsefile,kaasmatrix):
 	""" Function to create metadata file to add via biom add-metadata command"""
 	outfile = open(filename, 'w')
 	outfile.write("#OTUID"+"\t"+"KEGG_Pathways"+"\n")
@@ -129,8 +129,8 @@ if __name__ == "__main__":
 	startTime = datetime.now()
 	cat_kaas_output("combinedOutput.txt")
 	kass_combined_matrix("combinedOutput.txt","kaasbiom_convert.txt")
-	keggParse("Kegg_parse.txt","kaasbiom_convert.txt","ko00001.keg")		# Comparing all KAAS KEGGS
-	metaData("metadata.txt","Kegg_parse.txt","kaasbiom_convert.txt")
+	kegg_parse("Kegg_parse.txt","kaasbiom_convert.txt","ko00001.keg")		# Comparing all KAAS KEGGS
+	meta_data_add("metadata.txt","Kegg_parse.txt","kaasbiom_convert.txt")
 	os.system('biom convert -i kaasbiom_convert.txt -o kaas_output.biom --table-type="ortholog table"')
 	os.system('biom add-metadata -i kaas_output.biom -o kaas_meta_plus.biom --observation-metadata-fp metadata.txt --sc-pipe-separated KEGG_Pathways')
 	os.system('categorize_by_function.py -i kaas_meta_plus.biom -c "KEGG_Pathways" -l 3 -o kaas_level3.biom')
