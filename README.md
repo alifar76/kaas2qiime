@@ -31,7 +31,7 @@ In addition to KAAS output files, a [QIIME parameter file](http://qiime.org/docu
 
 https://raw.githubusercontent.com/ivan-kryukov/Kegg-Htext-Parser/master/ko00001.keg
 
-Please save this file in same folder as ```annotate_kos.py``` and name this KEGG database file as **ko00001.keg**. Please note that without the ko00001.keg file, the script will crash.
+Please save this file in same folder as ```kaas_to_qiime.py``` and name this KEGG database file as **ko00001.keg**. Please note that without the ko00001.keg file, the script will crash.
 
 How to use
 ------
@@ -40,4 +40,4 @@ There is a single script in the src folder. It's called:
 
 - ```annotate_kos.py```
 
-To run the script, simply type ```python annotate_kos.py``` in the terminal and make sure all the input files are present in the working directory. 
+To run the script, simply type ```python kaas_to_qiime.py``` in the terminal and make sure all the input files are present in the working directory. 
