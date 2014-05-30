@@ -38,6 +38,6 @@ How to use
 
 There is a single script in the src folder. It's called:
 
-- ```annotate_kos.py```
+- ```kaas_to_qiime.py```
 
 To run the script, simply type ```python kaas_to_qiime.py``` in the terminal and make sure all the input files are present in the working directory. 
