@@ -27,9 +27,7 @@ For example, if KAAS was used to annotate 2 genomes called "GenomeA" and "Genome
 
 2) **GenomeA_kaas.txt**
 
-In addition to KAAS output files, a [QIIME parameter file](http://qiime.org/documentation/qiime_parameters_files.html) is also required, which is provided in the src directory. It's called ```qiime_params.txt```. Another file needed to specifically annotate the KAAS output is a KEGG database flat file that can be downloaded from the following link:
-
-https://raw.githubusercontent.com/ivan-kryukov/Kegg-Htext-Parser/master/ko00001.keg
+In addition to KAAS output files, a [QIIME parameter file](http://qiime.org/documentation/qiime_parameters_files.html) is also required, which is provided in the src directory. It's called ```qiime_params.txt```. Another file needed to specifically annotate the KAAS output is a KEGG database flat file that can be downloaded from [here](https://raw.githubusercontent.com/ivan-kryukov/Kegg-Htext-Parser/master/ko00001.keg).
 
 Please save this file in same folder as ```kaas_to_qiime.py``` and name this KEGG database file as **ko00001.keg**. Please note that without the ko00001.keg file, the script will crash.
 
