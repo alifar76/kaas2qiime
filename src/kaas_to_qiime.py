@@ -136,4 +136,3 @@ if __name__ == "__main__":
 	os.system('categorize_by_function.py -i kaas_meta_plus.biom -c "KEGG_Pathways" -l 3 -o kaas_level3.biom')
 	os.system('summarize_taxa_through_plots.py -i kaas_level3.biom -p qiime_params.txt -o plots_level3')
 	print "\n"+"Task Completed! Time it took to complete the task: "+ str(datetime.now()-startTime)
-
